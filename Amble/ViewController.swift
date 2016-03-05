@@ -49,6 +49,7 @@ class ViewController: UIViewController {
                         }
                 }
                 
+                self.dismissViewControllerAnimated(true, completion: nil)
                 
             } else {
                 NSLog("Login error: %@", error!.localizedDescription);
