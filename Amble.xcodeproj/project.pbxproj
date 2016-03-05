@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A83321584061F67ACA27C695 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78ADFE48C7CE1D342F828C7 /* Pods.framework */; };
 		DFA374651C8B63DA00254876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA374641C8B63DA00254876 /* AppDelegate.swift */; };
 		DFA374671C8B63DA00254876 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA374661C8B63DA00254876 /* ViewController.swift */; };
 		DFA3746A1C8B63DA00254876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA374681C8B63DA00254876 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		DFA3746F1C8B63DA00254876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA3746D1C8B63DA00254876 /* LaunchScreen.storyboard */; };
 		DFA3747A1C8B63DA00254876 /* AmbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA374791C8B63DA00254876 /* AmbleTests.swift */; };
 		DFA374851C8B63DA00254876 /* AmbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA374841C8B63DA00254876 /* AmbleUITests.swift */; };
+		DFC508A91C8B7214006A1734 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC508A51C8B7214006A1734 /* Fabric.framework */; };
+		DFC508AA1C8B7214006A1734 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC508A61C8B7214006A1734 /* TwitterKit.framework */; };
+		DFC508AB1C8B7214006A1734 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFC508A71C8B7214006A1734 /* TwitterKitResources.bundle */; };
+		DFC508AC1C8B7214006A1734 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC508A81C8B7214006A1734 /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A5F9AA124FBAC93AF87948F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AF8FF5DFFEFEF2B1AFE3B081 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D78ADFE48C7CE1D342F828C7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA374611C8B63DA00254876 /* Amble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA374641C8B63DA00254876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFA374661C8B63DA00254876 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		DFA374801C8B63DA00254876 /* AmbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmbleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA374841C8B63DA00254876 /* AmbleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbleUITests.swift; sourceTree = "<group>"; };
 		DFA374861C8B63DA00254876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFC508A51C8B7214006A1734 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		DFC508A61C8B7214006A1734 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		DFC508A71C8B7214006A1734 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		DFC508A81C8B7214006A1734 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC508A91C8B7214006A1734 /* Fabric.framework in Frameworks */,
+				DFC508AC1C8B7214006A1734 /* TwitterCore.framework in Frameworks */,
+				DFC508AA1C8B7214006A1734 /* TwitterKit.framework in Frameworks */,
+				A83321584061F67ACA27C695 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +90,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA3D522444A9239925530A52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A5F9AA124FBAC93AF87948F /* Pods.debug.xcconfig */,
+				AF8FF5DFFEFEF2B1AFE3B081 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DFA374581C8B63DA00254876 = {
 			isa = PBXGroup;
 			children = (
+				DFC508A51C8B7214006A1734 /* Fabric.framework */,
+				DFC508A61C8B7214006A1734 /* TwitterKit.framework */,
+				DFC508A71C8B7214006A1734 /* TwitterKitResources.bundle */,
+				DFC508A81C8B7214006A1734 /* TwitterCore.framework */,
 				DFA374631C8B63DA00254876 /* Amble */,
 				DFA374781C8B63DA00254876 /* AmbleTests */,
 				DFA374831C8B63DA00254876 /* AmbleUITests */,
 				DFA374621C8B63DA00254876 /* Products */,
+				BA3D522444A9239925530A52 /* Pods */,
+				E12FBD901B9571ACCFA506BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +156,14 @@
 			path = AmbleUITests;
 			sourceTree = "<group>";
 		};
+		E12FBD901B9571ACCFA506BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D78ADFE48C7CE1D342F828C7 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +171,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFA374891C8B63DA00254876 /* Build configuration list for PBXNativeTarget "Amble" */;
 			buildPhases = (
+				69DD1707B803E996511287DB /* Check Pods Manifest.lock */,
 				DFA3745D1C8B63DA00254876 /* Sources */,
 				DFA3745E1C8B63DA00254876 /* Frameworks */,
 				DFA3745F1C8B63DA00254876 /* Resources */,
+				DFC508A41C8B7201006A1734 /* ShellScript */,
+				19AE2CC1015D6A991F87BB7D /* Embed Pods Frameworks */,
+				12BC43CAF8429DC662D7032C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC508AB1C8B7214006A1734 /* TwitterKitResources.bundle in Resources */,
 				DFA3746F1C8B63DA00254876 /* LaunchScreen.storyboard in Resources */,
 				DFA3746C1C8B63DA00254876 /* Assets.xcassets in Resources */,
 				DFA3746A1C8B63DA00254876 /* Main.storyboard in Resources */,
@@ -253,6 +297,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12BC43CAF8429DC662D7032C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19AE2CC1015D6A991F87BB7D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DD1707B803E996511287DB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFC508A41C8B7201006A1734 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 88a36053ccde6dfeea399b9b1aae9ceed6a24e8f 5ef5037a7ad3dee72db7f4b70b69b00db6c18f01cc27333a4c36dd43804c8479";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DFA3745D1C8B63DA00254876 /* Sources */ = {
@@ -398,8 +503,13 @@
 		};
 		DFA3748A1C8B63DA00254876 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5F9AA124FBAC93AF87948F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Amble/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamteam.Amble;
@@ -409,8 +519,13 @@
 		};
 		DFA3748B1C8B63DA00254876 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8FF5DFFEFEF2B1AFE3B081 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Amble/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamteam.Amble;
@@ -485,6 +600,7 @@
 				DFA3748B1C8B63DA00254876 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFA3748C1C8B63DA00254876 /* Build configuration list for PBXNativeTarget "AmbleTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +609,7 @@
 				DFA3748E1C8B63DA00254876 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFA3748F1C8B63DA00254876 /* Build configuration list for PBXNativeTarget "AmbleUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +618,7 @@
 				DFA374911C8B63DA00254876 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
