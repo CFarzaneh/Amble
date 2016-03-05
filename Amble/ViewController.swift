@@ -24,14 +24,29 @@ class ViewController: UIViewController {
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
                 
-                Alamofire.request(.GET, "http://2cc725cc.ngrok.io/api/dreamText", parameters: ["dream": "\(unwrappedSession.userName)"])
-                    .responseJSON { response in
-                        
-                        print(response.request!)  // original URL request
-                        print(response.response!) // URL response
-                        print(response.data!)     // server data
-                        print(response)   // result of response serialization
+                let uersname = unwrappedSession.userName
+                var nameofuser = ["username": uersname] as Dictionary<String, String>
+    
+                let urlPath: String = "http://d5c866b1.ngrok.io/newUser"
+                var theUrl: NSURL = NSURL(string: urlPath)!
                 
+                let request = NSMutableURLRequest(URL: theUrl)
+                request.HTTPMethod = "POST"
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                
+                let values = nameofuser
+                
+                request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(values, options: [])
+                
+                Alamofire.request(request)
+                    .responseJSON { response in
+                        // do whatever you want here
+                        switch response.result {
+                        case .Failure(let error):
+                            print(error)
+                        case .Success(let responseObject):
+                            print(responseObject)
+                        }
                 }
                 
                 
