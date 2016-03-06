@@ -23,6 +23,7 @@ class ViewController: UIViewController {
             if let unwrappedSession = session {
                 
                 self.username = unwrappedSession.userName
+                NSUserDefaults.standardUserDefaults().setObject(self.username, forKey: "username")
                 self.serverRequests.createUser(self.username)
                 
                 self.dismissViewControllerAnimated(true, completion: self.mapViewController.startTracking)

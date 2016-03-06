@@ -39,6 +39,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
+    
+    
+    
     @IBAction func javascriptButton(sender: AnyObject) {
         let result = webView.stringByEvaluatingJavaScriptFromString("alert(\"Hello! I am an alert box!!\");")
     }
@@ -48,12 +51,35 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    var pastLat = 0.0
+    var pastLon = 0.0
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         //var locationArray = locations as NSArray
         for location in locations{
-            let coord = location.coordinate
-            print(coord.latitude)
-            print(coord.longitude)
+            var coord = location.coordinate
+            
+            let numberFormatter = NSNumberFormatter()
+            numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+            
+            pastLat = abs(pastLat)
+            pastLon = abs(pastLon)
+            coord.latitude = abs(coord.latitude)
+            coord.longitude = abs(coord.longitude)
+            
+            var latDiff = (coord.latitude - pastLat) * 10000
+            var lonDiff = (coord.longitude - pastLon) * 10000
+            
+            print(latDiff)
+            print(lonDiff)
+            //            print(abs(coord.latitude) - abs(pastLat))
+            //            print(abs(coord.longitude) - abs(pastLon))
+            print("-----")
+            
+            pastLat = coord.latitude
+            pastLon = coord.longitude
+            
+            
             
             let coordinate = ["lat": "\(coord.latitude)", "lon": "\(coord.longitude)"] as Dictionary<String, String>
             tripPoints.append(coordinate)
@@ -62,6 +88,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     // called from ViewController on completion of Twitter auth
     func startTracking(){
+        
+        var username = NSUserDefaults.standardUserDefaults().valueForKey("username") as? String
+        if let unwrapped = username {
+            print(unwrapped)
+        }
+        
         if(CLLocationManager.locationServicesEnabled()){
             self.locationManager = CLLocationManager()
             self.locationManager.delegate = self
@@ -70,6 +102,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             self.locationManager.startUpdatingLocation()
             
         }
+        
     }
 
 }
