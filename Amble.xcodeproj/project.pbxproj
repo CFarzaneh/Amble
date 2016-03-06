@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		A83321584061F67ACA27C695 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78ADFE48C7CE1D342F828C7 /* Pods.framework */; };
 		B6745DFF1C8BB16B00EF28C3 /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6745DFE1C8BB16B00EF28C3 /* RequestController.swift */; };
+		B6F3A8081C8BE18300230FFE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F3A8071C8BE18300230FFE /* Storyboard.storyboard */; };
 		DF2CCB331C8B84B800D13A35 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2CCB321C8B84B800D13A35 /* MapViewController.swift */; };
 		DFA374651C8B63DA00254876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA374641C8B63DA00254876 /* AppDelegate.swift */; };
 		DFA374671C8B63DA00254876 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA374661C8B63DA00254876 /* ViewController.swift */; };
-		DFA3746A1C8B63DA00254876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA374681C8B63DA00254876 /* Main.storyboard */; };
 		DFA3746C1C8B63DA00254876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA3746B1C8B63DA00254876 /* Assets.xcassets */; };
 		DFA3746F1C8B63DA00254876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA3746D1C8B63DA00254876 /* LaunchScreen.storyboard */; };
 		DFA3747A1C8B63DA00254876 /* AmbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA374791C8B63DA00254876 /* AmbleTests.swift */; };
@@ -44,12 +44,12 @@
 		4A5F9AA124FBAC93AF87948F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AF8FF5DFFEFEF2B1AFE3B081 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B6745DFE1C8BB16B00EF28C3 /* RequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
+		B6F3A8071C8BE18300230FFE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		D78ADFE48C7CE1D342F828C7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2CCB321C8B84B800D13A35 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DFA374611C8B63DA00254876 /* Amble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA374641C8B63DA00254876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFA374661C8B63DA00254876 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DFA374691C8B63DA00254876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFA3746B1C8B63DA00254876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFA3746E1C8B63DA00254876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFA374701C8B63DA00254876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,10 +136,10 @@
 				DFA374661C8B63DA00254876 /* ViewController.swift */,
 				DF2CCB321C8B84B800D13A35 /* MapViewController.swift */,
 				B6745DFE1C8BB16B00EF28C3 /* RequestController.swift */,
-				DFA374681C8B63DA00254876 /* Main.storyboard */,
 				DFA3746B1C8B63DA00254876 /* Assets.xcassets */,
 				DFA3746D1C8B63DA00254876 /* LaunchScreen.storyboard */,
 				DFA374701C8B63DA00254876 /* Info.plist */,
+				B6F3A8071C8BE18300230FFE /* Storyboard.storyboard */,
 			);
 			path = Amble;
 			sourceTree = "<group>";
@@ -282,9 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC508AB1C8B7214006A1734 /* TwitterKitResources.bundle in Resources */,
+				B6F3A8081C8BE18300230FFE /* Storyboard.storyboard in Resources */,
 				DFA3746F1C8B63DA00254876 /* LaunchScreen.storyboard in Resources */,
 				DFA3746C1C8B63DA00254876 /* Assets.xcassets in Resources */,
-				DFA3746A1C8B63DA00254876 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DFA374681C8B63DA00254876 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFA374691C8B63DA00254876 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DFA3746D1C8B63DA00254876 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -514,6 +506,7 @@
 			baseConfigurationReference = 4A5F9AA124FBAC93AF87948F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -530,6 +523,7 @@
 			baseConfigurationReference = AF8FF5DFFEFEF2B1AFE3B081 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

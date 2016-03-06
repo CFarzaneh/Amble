@@ -27,7 +27,6 @@ class ViewController: UIViewController {
                 
                 self.dismissViewControllerAnimated(true, completion: self.mapViewController.startTracking)
                 
-                
             } else {
                 NSLog("Login error: %@", error!.localizedDescription);
             }

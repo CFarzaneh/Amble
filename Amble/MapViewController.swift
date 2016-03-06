@@ -22,6 +22,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBOutlet weak var textLabel: UITextView!
+    @IBOutlet weak var webView: UIWebView!
+    
     var locationManager: CLLocationManager!
     var tripPoints = Array<Dictionary<String, String>>();
     
@@ -32,7 +34,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let vc = storyboard.instantiateViewControllerWithIdentifier("welcomeViewController") as! UIViewController
         self.presentViewController(vc, animated: true, completion: nil)
         
-       
+        let url = NSURL (string: "http://d5c866b1.ngrok.io/map")
+        let requestObj = NSURLRequest(URL: url!)
+        webView.loadRequest(requestObj)
+        
+    }
+    
+    @IBAction func javascriptButton(sender: AnyObject) {
+        let result = webView.stringByEvaluatingJavaScriptFromString("alert(\"Hello! I am an alert box!!\");")
     }
     
     override func didReceiveMemoryWarning() {

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,7 +20,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to amble" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6e-pG-Kot">
                                 <rect key="frame" x="229" y="197" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -50,36 +49,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-FP-9KV">
-                                <rect key="frame" x="20" y="151" width="560" height="227"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4P7-80-KQK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dbh-FP-9KV" firstAttribute="trailing" secondItem="4UQ-kg-r4m" secondAttribute="trailingMargin" id="O5x-rX-gCi"/>
-                            <constraint firstItem="iFx-IU-b3I" firstAttribute="top" secondItem="dbh-FP-9KV" secondAttribute="bottom" constant="222" id="ptm-he-dc6"/>
-                            <constraint firstItem="dbh-FP-9KV" firstAttribute="top" secondItem="ofJ-5C-IST" secondAttribute="bottom" constant="87" id="qMO-fL-9ok"/>
-                            <constraint firstItem="dbh-FP-9KV" firstAttribute="leading" secondItem="4UQ-kg-r4m" secondAttribute="leadingMargin" id="s1g-bL-R4F"/>
+                            <constraint firstItem="4P7-80-KQK" firstAttribute="leading" secondItem="4UQ-kg-r4m" secondAttribute="leading" id="AeN-dm-GFJ"/>
+                            <constraint firstItem="4P7-80-KQK" firstAttribute="bottom" secondItem="iFx-IU-b3I" secondAttribute="top" id="TR5-dc-ys2"/>
+                            <constraint firstAttribute="trailing" secondItem="4P7-80-KQK" secondAttribute="trailing" id="blm-06-IA9"/>
+                            <constraint firstItem="4P7-80-KQK" firstAttribute="top" secondItem="4UQ-kg-r4m" secondAttribute="top" id="eDj-vm-AAM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map View Controller" id="sJg-Yh-SCO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="GQG-83-voa">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="XQj-ZP-Yo2">
                             <connections>
-                                <action selector="exploreBtn:" destination="uaj-uD-uNj" id="8Me-lV-p5X"/>
+                                <action selector="javascriptButton:" destination="uaj-uD-uNj" id="Dz9-HK-uXY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="textLabel" destination="dbh-FP-9KV" id="Gan-yr-U5x"/>
+                        <outlet property="webView" destination="4P7-80-KQK" id="FLE-mO-kI2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzM-3a-JY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2472" y="442"/>
+            <point key="canvasLocation" x="2426" y="442"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gqV-aM-sXI">
