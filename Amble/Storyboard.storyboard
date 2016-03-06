@@ -68,6 +68,11 @@
                                 <action selector="javascriptButton:" destination="uaj-uD-uNj" id="Dz9-HK-uXY"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="SG0-xo-PHE">
+                            <connections>
+                                <action selector="exploreBtn:" destination="uaj-uD-uNj" id="Nez-HV-Md5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="webView" destination="4P7-80-KQK" id="FLE-mO-kI2"/>

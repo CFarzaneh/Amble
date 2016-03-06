@@ -18,7 +18,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let username = "user" //ViewController.username
         serverRequests.getExploreLoop(username)
         print("explore button!")
-        
     }
     
     @IBOutlet weak var textLabel: UITextView!
