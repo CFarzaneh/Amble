@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A83321584061F67ACA27C695 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78ADFE48C7CE1D342F828C7 /* Pods.framework */; };
+		B6745DFF1C8BB16B00EF28C3 /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6745DFE1C8BB16B00EF28C3 /* RequestController.swift */; };
 		DF2CCB331C8B84B800D13A35 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2CCB321C8B84B800D13A35 /* MapViewController.swift */; };
 		DFA374651C8B63DA00254876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA374641C8B63DA00254876 /* AppDelegate.swift */; };
 		DFA374671C8B63DA00254876 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA374661C8B63DA00254876 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		4A5F9AA124FBAC93AF87948F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AF8FF5DFFEFEF2B1AFE3B081 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B6745DFE1C8BB16B00EF28C3 /* RequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
 		D78ADFE48C7CE1D342F828C7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2CCB321C8B84B800D13A35 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DFA374611C8B63DA00254876 /* Amble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amble.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 				DFA374641C8B63DA00254876 /* AppDelegate.swift */,
 				DFA374661C8B63DA00254876 /* ViewController.swift */,
 				DF2CCB321C8B84B800D13A35 /* MapViewController.swift */,
+				B6745DFE1C8BB16B00EF28C3 /* RequestController.swift */,
 				DFA374681C8B63DA00254876 /* Main.storyboard */,
 				DFA3746B1C8B63DA00254876 /* Assets.xcassets */,
 				DFA3746D1C8B63DA00254876 /* LaunchScreen.storyboard */,
@@ -370,6 +373,7 @@
 				DFA374671C8B63DA00254876 /* ViewController.swift in Sources */,
 				DF2CCB331C8B84B800D13A35 /* MapViewController.swift in Sources */,
 				DFA374651C8B63DA00254876 /* AppDelegate.swift in Sources */,
+				B6745DFF1C8BB16B00EF28C3 /* RequestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
