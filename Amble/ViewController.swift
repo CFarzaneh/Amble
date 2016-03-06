@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     let serverRequests = ServerRequests();
     let mapViewController = MapViewController();
+    var username: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,8 @@ class ViewController: UIViewController {
         let logInButton = TWTRLogInButton { (session, error) in
             if let unwrappedSession = session {
                 
-                let username = unwrappedSession.userName
-                self.serverRequests.createUser(username)
+                self.username = unwrappedSession.userName
+                self.serverRequests.createUser(self.username)
                 
                 self.dismissViewControllerAnimated(true, completion: self.mapViewController.startTracking)
                 
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
 }
 

@@ -12,6 +12,15 @@ import CoreLocation
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
+    let serverRequests = ServerRequests()
+    
+    @IBAction func exploreBtn(sender: UIBarButtonItem) {
+        let username = "user" //ViewController.username
+        serverRequests.getExploreLoop(username)
+        print("explore button!")
+        
+    }
+    
     @IBOutlet weak var textLabel: UITextView!
     var locationManager: CLLocationManager!
     var tripPoints = Array<Dictionary<String, String>>();
