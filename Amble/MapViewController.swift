@@ -11,6 +11,8 @@ import UIKit
 
 class MapViewController: UIViewController {
     
+    @IBOutlet weak var textLabel: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
