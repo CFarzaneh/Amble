@@ -8,8 +8,13 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
+    
+    @IBOutlet weak var textLabel: UITextView!
+    var locationManager: CLLocationManager!
+    var tripPoints = Array<Dictionary<String, String>>();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,4 +30,29 @@ class MapViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        //var locationArray = locations as NSArray
+        for location in locations{
+            let coord = location.coordinate
+            print(coord.latitude)
+            print(coord.longitude)
+            
+            let coordinate = ["lat": "\(coord.latitude)", "lon": "\(coord.longitude)"] as Dictionary<String, String>
+            tripPoints.append(coordinate)
+        }
+    }
+    
+    // called from ViewController on completion of Twitter auth
+    func startTracking(){
+        if(CLLocationManager.locationServicesEnabled()){
+            self.locationManager = CLLocationManager()
+            self.locationManager.delegate = self
+            self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            self.locationManager.requestAlwaysAuthorization()
+            self.locationManager.startUpdatingLocation()
+            
+        }
+    }
+
 }
