@@ -17,12 +17,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let logInButton = TWTRLogInButton { (session, error) in
             if let unwrappedSession = session {
-                let alert = UIAlertController(title: "Logged In",
-                    message: "User \(unwrappedSession.userName) has logged in",
-                    preferredStyle: UIAlertControllerStyle.Alert
-                )
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
                 
                 let uersname = unwrappedSession.userName
                 var nameofuser = ["username": uersname] as Dictionary<String, String>
@@ -48,7 +42,6 @@ class ViewController: UIViewController {
                             print(responseObject)
                         }
                 }
-                
                 self.dismissViewControllerAnimated(true, completion: nil)
                 
             } else {

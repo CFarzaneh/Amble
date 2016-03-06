@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -50,26 +49,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZo-lf-hpl">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <items>
-                                    <barButtonItem title="Item" id="bMH-BE-p1C"/>
-                                </items>
-                            </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTd-jV-7tk">
-                                <rect key="frame" x="136" y="194" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="pushNow:" destination="uaj-uD-uNj" eventType="touchUpInside" id="LjJ-Mh-u8w"/>
-                                </connections>
-                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ntf-oq-ylB">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="yZo-lf-hpl" secondAttribute="trailing" constant="-20" id="4aP-jp-fHc"/>
-                            <constraint firstItem="iFx-IU-b3I" firstAttribute="top" secondItem="yZo-lf-hpl" secondAttribute="bottom" id="7jd-Tb-Trw"/>
-                            <constraint firstItem="yZo-lf-hpl" firstAttribute="leading" secondItem="4UQ-kg-r4m" secondAttribute="leadingMargin" constant="-20" id="fuU-Nv-6eM"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map View Controller" id="sJg-Yh-SCO"/>
                 </viewController>
